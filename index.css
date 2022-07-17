@@ -1,0 +1,864 @@
+body, html {
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  margin: 0;
+}
+
+@font-face {
+  font-family: "special-elite";
+  src: url(./fonts/Special_Elite/special-elite-regular.ttf);
+}
+@font-face {
+  font-family: "raleway-thin";
+  src: url(./fonts/raleway/Raleway-Thin.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/raleway/raleway.ttf);
+}
+
+@font-face {
+  font-family: "noto";
+  src: url(./fonts/Noto_Sans_Display/noto.ttf);
+}
+@font-face {
+  font-family: "indie_flowers";
+  src: url(./fonts/indie_flowers/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: "Frederika";
+  src: url(./fonts/frederika_the_great/FrederickatheGreat-Regular.ttf);
+}
+
+.bg-image {
+  position: absolute;
+  background-image: url("./imagenes/bg-image.webp");
+  background-repeat: repeat;
+  background-size: cover;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  z-index: -1;
+  opacity: 0.1;
+}
+
+/* -----------header------------ */
+
+.header-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: max-content;
+  margin: 0px;
+  justify-content: space-between;
+  background-color: lightgrey;
+  font-family: "raleway";
+  font-size: 1.2em;
+  font-weight: 600;
+  border-width: 0px 0px 2px 0px;
+  border-style: solid;
+  border-color: black;
+}
+
+.logo img {
+  width: 200px;
+  height: auto;
+}
+
+.logo {
+  width: 35%;
+  align-self: center;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+.navbar {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  gap: 20px;
+}
+
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+}
+
+.navbar a {
+  color: black;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  font-weight: bold;
+}
+.login i {
+  font-size: 1.5em;
+  color: black;
+  opacity: 0.7;
+}
+
+/* ----------title---------- */
+
+.title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.title h1 {
+  font-family: "Frederika";
+  font-size: 2.2em;
+  text-align: center;
+  margin: 30px 10px 0px 10px;
+}
+
+/* ------------------------- */
+
+.content {
+  position: relative;
+}
+
+.section-container {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: auto;
+}
+
+#hero,
+#about-me,
+#quote,
+#contact {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 40px;
+  padding-bottom: 0;
+}
+
+/* ---------hero----------- */
+
+.slogan {
+  display: flex;
+  flex-direction: row;
+  margin-right: 200px;
+  margin-left: 200px;
+}
+
+.text-container {
+  margin-top: 55px;
+  margin-bottom: 90px;
+  background: #ffefba;
+  background: -webkit-linear-gradient(
+    to left,
+    #ffffff,
+    #ffefba
+  );
+  background: linear-gradient(
+    to left,
+    #ffffff,
+    #ffefba
+  );
+  border-radius: 5px;
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset,
+    rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset,
+    rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px,
+    rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px,
+    rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+
+  font-family: "special-elite";
+  font-size: 1.3em;
+  width: 40%;
+  height: max-content;
+  margin-right: -60px;
+  transform: rotate(-15deg);
+}
+
+.slogan h2 {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.up-arrow {
+  position: absolute;
+  top: 100vh;
+  bottom: 10px;
+  right: 3px;
+  pointer-events: none;
+  text-decoration: none;
+  color: #000000;
+  opacity: 0.5;
+}
+
+.up-arrow i {
+  position: fixed;
+  position: sticky;
+  pointer-events: all;
+  top: calc(100vh - 67px);
+  right: 10px;
+  font-size: 2em;
+}
+
+.hero-img {
+  background-image: url(./imagenes/travel-planner.jpg);
+  margin-right: 0;
+  height: 400px;
+  flex: 1 1 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  z-index: -1;
+}
+
+/* -----------about me------------- */
+
+#about-me {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+  padding-top: 100px;
+}
+
+.history-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+.about-me-history {
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  flex: 0 1 50%;
+}
+
+.history-title {
+  height: auto;
+  font-family: "Frederika";
+  flex: 0 1 25%;
+  text-align: end;
+  font-size: 1.3em;
+  padding-right: 50px;
+}
+
+.about-me-img {
+  position: absolute;
+  background-image: url(./imagenes/bagagge.jpg);
+  background-position-x: center;
+  background-position-y: 70%;
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+  opacity: 0.3;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+.about-me-text {
+  font-size: 1.4em;
+  font-family: "raleway";
+  text-align: center;
+  font-weight: 900;
+}
+
+.about-me-text p {
+  padding: 20px;
+  padding-top: 0;
+}
+
+/* -----------destinations------------ */
+
+#destinations {
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 20px;
+}
+
+.destinations-container {
+  display: flex;
+  flex-direction: row;
+}
+
+.destinations-title {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  width: 30%;
+  padding: 30px;
+  padding-top: 0;
+  font-family: "Frederika";
+  font-size: 1.3em;
+}
+.destinations-title p {
+  font-size: 0.9em;
+  font-family: "raleway";
+  text-align: center;
+} 
+
+.destinations-title img {
+  width: 70%;
+  height: auto;
+  border-bottom: 10px;
+  border-radius: 10px;
+  float: left;
+  position: sticky;
+  top: 15px;
+}
+
+/* ------ cards ------ */
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  width: 60%;
+  gap: 40px;
+  padding-top: 45px;
+  font-family: "raleway";
+  font-weight: 900;
+}
+.cards {
+  text-decoration: none;
+  color: black;
+}
+.cards a:visited {
+  color: black;
+}
+.cards:hover {
+  transform: scale(1.01);
+  font-weight: bold;
+}
+
+.cards-title {
+  font-size: 1.2em;
+  margin-bottom: 10px;
+}
+
+.cards-title h3 {
+  margin: 0;
+}
+
+.cards {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  flex: 1 1 200px;
+  height: 310px;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.15) 2.9px 2.9px 3.7px;
+  border-radius: 20px;
+}
+.cards-content {
+  display: flex;
+  align-items: center;
+  height: 65px;
+  justify-self: flex-end;
+  margin-top: 10px;
+}
+.cards-img {
+  width: 300px;
+  height: 200px;
+  border-radius: 10px;
+  background-size: cover;
+  display: flex;
+  flex: 1 0;
+}
+.small-text {
+  font-size: 1.2em;
+  margin: 0;
+}
+
+.cards:first-child .cards-img {
+  background-image: url(./imagenes/beach.jpg);
+}
+.cards:nth-child(2) .cards-img {
+  background-image: url(./imagenes/bg-ciudades-europeas2.jpg);
+}
+.cards:nth-child(3) .cards-img {
+  background-image: url(./imagenes/times-square.jpg);
+  background-position-y: 90%;
+}
+.cards:nth-child(4) .cards-img {
+  background-image: url(./imagenes/portada-cuento.jpg);
+}
+.cards:nth-child(5) .cards-img {
+  background-image: url(./imagenes/portada-children.jpg);
+}
+.cards:nth-child(6) .cards-img {
+  background-image: url(./imagenes/portada-exoticos.jpg);
+}
+.cards:nth-child(7) .cards-img {
+  background-image: url(./imagenes/portada-argentina.jpg);
+}
+.cards:nth-child(8) .cards-img {
+  background-image: url(./imagenes/portada-curiosos.jpg);
+}
+
+
+/* ----------hambuerger menu------------- */
+
+
+
+.menu-button {
+  display: flex;
+  margin: 30px;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 26px;
+  padding: 7px;
+  border-radius: 7px;
+  background-color: black;
+  cursor: pointer;
+}
+.menu-button span {
+  width: 26px;
+  height: 3px;
+  background-color: lightgrey;
+}
+.menu-toggle {
+  display: none;
+}
+.toggle {
+  display: none;
+  position: absolute;
+  top: 100px;
+  right: 10px;
+  text-align: center;
+  background-color: black;
+  border-radius: 7px;
+  padding: 20px;
+  width: 150px;
+}
+.toggle li {
+  list-style: none;
+  display: block;
+  padding: 10px 0;
+  font-family: "raleway";
+  font-weight: 900;
+  color: lightgrey;
+  font-size: 1em;
+}
+.toggle a {
+  text-decoration: none;
+  color: lightgrey;
+  font-size: 1em;
+}
+
+.menu-toggle:checked + .toggle {
+  display: block;
+  z-index: 1000;
+}
+.menu {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hamburger a:visited {
+  color: lightgrey;
+}
+
+/* -------------quote--------------- */
+
+
+#quote {
+  font-family: "raleway";
+  font-weight: 900;
+  font-size: 1em;
+  width: 90%;
+}
+
+.quote-container {
+  background-image: url(./imagenes/colisseum.jpg);
+  background-size: cover;
+  background-position-y: 55%;
+  padding: 20px;
+  padding-top: 0;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  gap: 40px;
+  align-items: center;
+  font-family: "raleway";
+  font-weight: 900;
+  color: black;
+  width: 100%;
+}
+
+.quote-title {
+  font-family: "Frederika";
+  font-size: 1.2em;
+}
+
+.quote-form form {
+  padding-top: 20px;
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  gap: 15px;
+}
+.quote-form {
+  background-color: rgb(255, 255, 255, 0.3);
+  height: 450px;
+  border-radius: 20px;
+  margin-top: 20px;
+  padding-left: 10px;
+}
+
+#out-date {
+  margin-top: 15px;
+}
+
+.quote-form form input,
+select,
+date,
+textarea {
+  width: 180px;
+  height: 25px;
+  padding-left: 5px;
+  border-radius: 5px;
+  border-width: 2px;
+  border-style: inset;
+  border-color: -internal-light-dark(rgb(118, 118, 118), rgb(133, 133, 133));
+  border-image: initial;
+  font-family: "raleway-thin";
+  font-weight: 900;
+}
+.text-area-form {
+  width: 250px;
+  height: 70px;
+  margin-top: 5px;
+}
+
+.quote-submit-button {
+  border-radius: 5px;
+  width: 150px;
+  height: 30px;
+  background-color: #5ab2df;
+  font-family: "raleway";
+  font-weight: 900;
+  font-size: 1em;
+  color: white;
+  align-self: center;
+}
+.quote-submit-button:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.quote-img {
+  display: flex;
+  background-position-y: 100%;
+}
+.quote-img img {
+  width: 600px;
+  height: auto;
+  border-radius: 10px;
+  background-size: cover;
+  flex: 1 0;
+  z-index: -1;
+}
+
+/* -----------offers----------- */
+
+.offers-container {
+  display: flex;
+  flex-direction: column;
+  margin: 35px 0px 35px 0px;
+}
+
+.offers-container h2 {
+  font-family: "raleway";
+  font-size: 2em; 
+}
+.offers-container i {
+  font-size: 2.5em;
+}
+.icon-email-input {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.icon-email-input input {
+  border-radius: 5px;
+  width: 250px;
+  height: 25px;
+  font-family: "raleway";
+  padding-left: 5px;
+  font-style: italic;
+}
+.offers-container button {
+  margin-top: 10px;
+  width: 250px;
+  height: 35px;
+  border-radius: 20px;
+  font-family: "raleway";
+  font-size: 1em;
+  font-weight: bold;
+}
+.offers-container button:hover {
+  background-color: black;
+  color: white;
+}
+
+
+/* -----------------contact------------------- */
+
+#contact {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  padding-bottom: 60px;
+  width: 100%;
+}
+
+.contactus-container {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+  background-image: url(./imagenes/bg-contactus.jpg);
+  border-radius: 20px;
+  background-size: cover;
+  padding: 20px;
+  padding-top: 0;
+  width: 60%;
+  font-family: "raleway";
+  font-weight: 900;
+  color: white;
+  font-size: 1.1em;
+}
+
+.contactus-container h2 {
+  font-family: "raleway-thin";
+  font-size: 1.8em;
+  text-decoration: underline;
+  margin-bottom: 10px;
+}
+.contactus-container p {
+  margin-right: 100px;
+}
+
+.contact_container {
+  display: flex;
+  flex-direction: column;
+  align-content: center;
+  text-align: start;
+}
+
+.contact p {
+  font-size: 1em;
+}
+.address,
+.mail,
+.tel {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.nets {
+  display: flex;
+  flex-direction: column;
+}
+.items {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.address p {
+  padding-left: 10px;
+}
+.mail p {
+  padding-left: 10px;
+}
+.tel p {
+  padding-left: 10px;
+}
+.nets p {
+  padding-left: 10px;
+}
+.nets a {
+  font-size: 2rem;
+}
+.social_media {
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+  padding-left: 50px;
+}
+.social_media i {
+  background-color: rgb(255, 255, 255, 0.3);
+  border-radius: 10px;
+  color: white;
+  padding: 5px;
+}
+.social_media a:visited {
+  color: white;
+}
+
+/* ----------footer----------- */
+
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  height: 140px;
+  margin: 0;
+  border-top-color: #e3e3e3;
+  border-width: 1px 0px 0px 0px;
+  border-top-style: solid;
+  z-index: 1000;
+  background-color: #e3e3e3;
+  opacity: 0.7;
+}
+.footer_logo {
+  margin-top: -19px;
+  font-size: 2em;
+}
+.footer_logo i {
+  opacity: 0.7;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  opacity: 0.7;
+}
+
+.footer-nav ul {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style: none;
+  align-items: center;
+  padding-inline-start: 0;
+}
+.footer-nav a {
+  font-family: "noto";
+  font-size: 1em;
+  color: grey;
+  color: black;
+  text-decoration: none;
+}
+.author {
+  font-family: "noto";
+  font-size: 0.7em;
+  color: grey;
+}
+
+.slider-container {
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  overflow-x: scroll scroll-nap-type mandatory;
+}
+
+.slider-container img {
+  flex: 0 0 100%;
+  width: 100%;
+  object-fit: cover;
+  scroll-snap-align: center;
+}
+
+/* --------medias queries--------- */
+
+@media (min-width: 640px) {
+  .hamburger {
+    display: none;
+  }
+
+  .navbar nav ul li {
+    margin-right: 10px;
+  }
+  .navbar {
+    font-size: 1em;
+    width: 50%;
+    margin-right: 5px;
+  }
+}
+@media (max-width: 639px) {
+  .navbar {
+    display: none;
+  }
+  .hero-img {
+    height: 220px;
+  }
+  .slogan {
+    margin-right: 0;
+    margin-left: 10px;
+  }
+  .text-container {
+    margin-top: 30px;
+    font-size: 0.9em;
+  }
+  .history-container,
+  .destinations-container {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+  }
+  #about-me,
+  #hero,
+  #contact,
+  #quote {
+    padding: 10px;
+  }
+  .history-title {
+    padding-right: 0;
+  }
+  .destinations-title {
+    width: 90%;
+    padding: 0;
+  }
+  .destinations-title h2 {
+    margin: 5px;
+  }
+  .destinations-title img {
+    display: none;
+  }
+  .cards-container {
+    padding-top: 0;
+  }
+  .quote-container {
+    justify-content: center;
+    padding: 5px;
+  }
+  .quote-form form{
+    gap: 8px;
+    width: 90%;
+  }
+  .contactus-container {
+    width: 90%;
+    font-size: 1em;
+    margin: 40px;
+  }
+  .footer-nav {
+    width: 90%;
+  }
+  .footer-nav ul {
+  justify-content: space-between;
+}
+.offers-container {
+  padding: 15px;
+}
+.offers-container h2 {
+  font-size: 1.8em;
+}
+.offers-container button {
+  align-self: center;
+}
+}

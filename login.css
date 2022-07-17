@@ -1,0 +1,157 @@
+body {
+  background-image: url("./imagenes/login-bg.jpg");
+  background-position: center;
+  background-size: cover;
+  background-position-y: 80%;
+  -webkit-font-smoothing: antialiased;
+  font-size: 1.3em;
+  font-family: "Frederika";
+}
+@font-face {
+  font-family: "Frederika";
+  src: url(./fonts/frederika_the_great/FrederickatheGreat-Regular.ttf);
+}
+@font-face {
+  font-family: "indie_flowers";
+  src: url(./fonts/indie_flowers/IndieFlower-Regular.ttf);
+}
+@font-face {
+  font-family: "raleway";
+  src: url(./fonts/raleway/raleway.ttf);
+}
+
+.login {
+  display: flex;
+  justify-content: center;
+}
+.login-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.login-container img {
+    width: 320px;
+    height: auto;
+    padding: 20px;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  padding-top: 30px;
+}
+::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #ffffff;
+  opacity: 1; /* Firefox */
+  font-size: 1em;
+  font-family: "raleway";
+}
+.form-login {
+  display: flex;
+  flex-direction: column;
+  flex: 1 1 50%;
+  height: 60%;
+  background-color: rgba(0, 0, 0, 0.8);
+  padding-top: 10px;
+  padding-bottom: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  border-radius: 15px;
+  border-color: #d2d2d2;
+  border-width: 5px;
+  color: white;
+  box-shadow: 0 1px 0 #cfcfcf;
+  font-family: "raleway";
+}
+.form-control {
+  background:transparent;
+    color:white;
+    font-size: 0.6em;
+    height: 30px;
+    margin-bottom: 15px;
+    padding-left: 7px;
+}
+h1 {
+  color: white;
+  font-size: 1.8em;
+  text-align: center;
+}
+h4 {
+  border: 0 solid #fff;
+  border-bottom-width: 1px;
+  padding-bottom: 10px;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.form-control {
+  border-radius: 10px;
+}
+.web-name {
+  color: white;
+  margin-bottom: 10px;
+}
+.wrapper {
+  text-align: center;
+}
+.group-btn button {
+  background-color: white;
+  font-family: "raleway";
+  border-radius: 15px;
+  font-size: 1em;
+  color: #1b262c;
+  width: 50%;
+  height: 40px;
+  border: none;
+  margin-top: 10px;
+}
+
+.group-btn:hover button {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+
+.footer-form {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 1em;
+  color: lightgrey;
+}
+.footer-form a {
+  text-decoration: none;
+  margin-bottom: 3px;
+  color: lightgrey;
+}
+.footer-form p {
+  margin: 0;
+}
+.forget-pass:hover,
+.sign-up:hover {
+  transform: scale(1.1);
+  font-weight: bold;
+}
+.go-back {
+  margin-top: 5px;
+}
+.go-back a {
+  text-decoration: none;
+  font-family: "raleway";
+  text-align: center;
+  font-size: 1.2em;
+  color: white;
+  font-weight: bold;
+}
+.go-back:hover a {
+  text-decoration: none;
+  background-color: white;
+  border-radius: 10px;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: black;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+a:visited {
+  color: lightgrey;
+}
